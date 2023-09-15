@@ -13,7 +13,7 @@ int main(void)
 
 	while (factor != num)
 	{
-		if (num & factor == 0)
+		if (num % factor == 0)
 			num = num / factor;
 		else
 			factor++;
