@@ -8,22 +8,17 @@
  */
 int main(void)
 {
-	long int n = 612852475143;
-	int i;
-	long int l_factor = 0;
+	long num = 612852476143;
+	long factor = 2;
 
-	for (i = 1; i * i <= n; i++)
+	while (factor != num)
 	{
-		while ((n & i) == 0)
-		{
-			l_factor = i;
-			n /= i;
-		}
+		if (num & factor == 0)
+			num = num / factor;
+		else
+			factor++;
 	}
-	if (n > 1)
-		l_factor = n;
-	printf("%ld", l_factor);
-	printf("\n");
+	printf("%ld\n", num);
 
 	return (0);
 }
