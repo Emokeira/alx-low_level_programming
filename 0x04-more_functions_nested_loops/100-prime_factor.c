@@ -11,14 +11,15 @@ int main(void)
 	long num = 612852476143;
 	long factor = 2;
 
-	while (factor != num)
+	for (; factor <= num; factor++)
 	{
 		if (num % factor == 0)
+		{
 			num = num / factor;
-		else
-			factor++;
+			factor--;
+		}
 	}
-	printf("%ld\n", num);
+	printf("%lu\n", factor);
 
 	return (0);
 }
