@@ -1,4 +1,6 @@
 #include "3-calc.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 int op_add(int a, int b);
 int op_sub(int a, int b);
@@ -10,7 +12,7 @@ int op_mod(int a, int b);
  * op_add - calculates the sum of two integers
  * @: first integer
  * @b: second integer
- * Retun: the sum of a and b
+ * Return: the sum of a and b
  */
 
 int op_add(int a, int b)
