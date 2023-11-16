@@ -1,11 +1,11 @@
 #include "lists.h"
 
 /**
- *  * print_list - a function that prints all elements of a list_list
- *   * @h: list containing elements to print
- *    *
- *     * Return: size_t
- *      */
+ * print_list - a function that prints all elements of a list_list
+ * @h: list containing elements to print
+ *
+ * Return: size_t
+ */
 
 size_t print_list(const list_t *h)
 {
